@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expanding Cards</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script defer type="module" src="./script.js"></script>
+    <style>
+        *{
+        box-sizing: border-box;
+        }
+
+      body {
+        font-family: 'Muli', sans-serif;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container{
+        width: 90vw;
+      }
+      
+      .panel{
+        height: 80vh;
+      }
+
+      .f-5{
+        flex: 0.5
+      }
+
+      .customTransition{
+        transition: flex 0.7s ease-in;
+      }
+
+      .active{
+        flex: 5;
+      }
+
+      .active h3{
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
+      }
+
+      @media (max-width: 480px) {
+        .container{
+            width: 100vw
+        }
+
+        .panel:nth-of-type(4),
+        .panel:nth-of-type(5) {
+        display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container flex">
+        <div
+          class="bg-cover bg-center bg-no-repeat rounded-3xl text-white cursor-pointer f-5 m-2.5 relative customTransition panel active" 
+          style="background-image: url('https://images.unsplash.com/photo-1657037029325-be5c4f1d4dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');"
+        >
+          <h3 class="absolute text-2xl bottom-5 left-5 opacity-0 active">Explore The World</h3>
+        </div>
+  
+        <div class="bg-cover bg-center bg-no-repeat rounded-3xl text-white cursor-pointer f-5 m-2.5 relative customTransition panel" style="background-image: url('https://images.unsplash.com/photo-1657078689708-975e3d995a3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')"">
+
+          <h3 class="absolute text-2xl bottom-5 left-5 m-0 opacity-0">Mountains</h3>
+        </div>
+  
+        <div class="bg-cover bg-center bg-no-repeat rounded-3xl text-white cursor-pointer f-5 m-2.5 relative customTransition panel" style="background-image: url('https://images.unsplash.com/photo-1657089343320-cc64d183de1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')">
+
+          <h3 class="absolute text-2xl bottom-5 left-5 m-0 opacity-0">Peaks</h3>
+        </div>
+        
+  
+        <div class="bg-cover bg-center bg-no-repeat rounded-3xl text-white cursor-pointer f-5 m-2.5 relative customTransition panel" style="background-image: url('https://images.unsplash.com/photo-1657037030919-9fa6119f6b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=709&q=80')">
+
+          <h3 class="absolute text-2xl bottom-5 left-5 m-0 opacity-0">Light</h3>
+        </div>
+  
+        <div class="bg-cover bg-center bg-no-repeat rounded-3xl text-white cursor-pointer f-5 m-2.5 relative customTransition panel" style="background-image: url('https://images.unsplash.com/photo-1656962395659-a6939c6a3880?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80')">
+
+          <h3 class="absolute text-2xl bottom-5 left-5 m-0 opacity-0">Lighthouse</h3>
+        </div>
+      </div>
+      
+  </body>
+</html>
