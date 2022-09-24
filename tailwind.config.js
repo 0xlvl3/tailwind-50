@@ -5,6 +5,7 @@ module.exports = {
     "./00-Template/index.html",
     "./01-ExpandingCards/index.html",
     "./02-ProgressSteps/index.html",
+    "./03-RotatingNavigation/index.html",
   ],
   theme: {
     extend: {},
