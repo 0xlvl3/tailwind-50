@@ -8,6 +8,7 @@ module.exports = {
     "./03-RotatingNavigation/index.html",
     "./04-HiddenSearch/index.html",
     "./05-BlurryLoading/index.html",
+    "./06-ScrollAnimation/index.html",
   ],
   theme: {
     extend: {},
